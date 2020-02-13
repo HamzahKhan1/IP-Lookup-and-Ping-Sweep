@@ -14,9 +14,9 @@
 - To grab the corresponding IP addresses for each domain, use a **for** loop written in Nano or Vim: 
 `#!/bin/bash`
 
-`for url in $(cat cisco.txt;)do`
-`host $url | grep "has address" | cut -d " " -f4`
-`done`
+`for url in $(cat cisco.txt;)do`  
+`host $url | grep "has address" | cut -d " " -f4`  
+`done` 
 
 - Save the script and give it executable permissions: chmod 755 cisco.sh
 - Execute the script with ./cisco.sh
