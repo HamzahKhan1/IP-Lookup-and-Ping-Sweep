@@ -11,7 +11,7 @@
 - Use the command `cut` and the "d" delimiter to create a command that narrows the list into domains extracted from the index.html file: `cat index.html | grep "href=" | cut -d / -f3 | grep "cisco.com" | cut -d '"' -f1 | sort –u`
 - Pipe the output, which is a list of domains, into a new file called cisco.txt.
 - Use the `host` command next to www.cisco.com to identify the IPV4 address, and then use the command `host www.cisco.com | grep "has address" | cut -d "" -f4` to specify what we want to see.
-- To grab the corresponding IP addresses for each domain, use a **for** loop written in Nano or Vim
+- To grab the corresponding IP addresses for each domain, use a **for** loop written in Nano or Vim: 
 
 `#!/bin/bash
 
